@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtrowanie Projektów</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        p { margin: 5px 0; }
+        .error { color: red; }
+        form { margin-bottom: 20px; }
+        label { display: block; margin: 10px 0 5px; }
+        input, button { padding: 5px; margin-right: 10px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        a { text-decoration: none; color: blue; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Filtrowanie Projektów</h1>
+    <p><a href="{{ url_for('index') }}">Powrót do listy projektów</a></p>
+
+    <form method="post">
+        {% for feature in available_features %}
+        <label for="{{ feature }}">{{ feature }}:</label>
+        <input type="text" name="{{ feature }}" id="{{ feature }}" placeholder="Wprowadź wartość">
+        {% endfor %}
+        <button type="submit">Filtruj</button>
+    </form>
+
+    <h2>Wyniki filtrowania</h2>
+    {% if filtered_projects %}
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Nazwa</th>
+                <th>ID</th>
+            </tr>
+            {% for symbol, details in filtered_projects.items() %}
+            <tr>
+                <td><a href="{{ url_for('project_details', symbol=symbol) }}">{{ symbol }}</a></td>
+                <td>{{ details.Nazwa }}</td>
+                <td>{{ details.ID }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>Brak projektów spełniających kryteria.</p>
+    {% endif %}
+</body>
+</html>

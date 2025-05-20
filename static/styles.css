@@ -1,0 +1,92 @@
+/* Stylizacja z kolorami firmowymi */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #F1F1F1; /* Jasnoszary */
+    color: #7A7A7A; /* Szary */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+    font-size: 24px;
+    color: #7A7A7A; /* Szary */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.nav-links {
+    margin-bottom: 20px;
+}
+.nav-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #00A0E4; /* Główny niebieski */
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.nav-links a:hover {
+    background-color: #A7DCF8; /* Jasnoniebieski */
+    color: #7A7A7A; /* Szary */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #F1F1F1; /* Jasnoszary */
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+th {
+    background-color: #A7DCF8; /* Jasnoniebieski */
+    font-weight: bold;
+    color: #7A7A7A; /* Szary */
+}
+tr:nth-child(even) {
+    background-color: #F1F1F1; /* Jasnoszary */
+}
+tr:hover {
+    background-color: #A7DCF8; /* Jasnoniebieski */
+}
+a {
+    color: #00A0E4; /* Główny niebieski */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #7A7A7A; /* Szary */
+}
+.no-projects {
+    font-size: 16px;
+    color: #7A7A7A; /* Szary */
+    margin-top: 20px;
+}
+/* Responsywność */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+    }
+    table {
+        font-size: 12px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
