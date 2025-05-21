@@ -1,48 +1,39 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Sortuj według podobieństwa</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Sortuj według podobieństwa</h1>
-        {% if error %}
-        <p class="error-message">{{ error }}</p>
-        {% endif %}
-        <form method="POST">
-            <label for="reference_project">Projekt odniesienia:</label>
-            <select id="reference_project" name="reference_project" required>
-                <option value="">Wybierz projekt...</option>
-                {% for symbol in projects.keys() %}
-                <option value="{{ symbol }}">{{ symbol }}</option>
-                {% endfor %}
-            </select>
-            <input type="submit" value="Sortuj">
-        </form>
-        {% if sorted_projects %}
-        <h2>Wyniki dla projektu: {{ reference_project }} ({{ reference_name }})</h2>
-        <table>
-            <tr>
-                <th>Symbol</th>
-                <th>Nazwa</th>
-                <th>ID</th>
-                <th>Podobieństwo</th>
-            </tr>
-            {% for proj, sim in sorted_projects %}
-            <tr>
-                <td><a href="{{ url_for('project_details', symbol=proj) }}">{{ proj }}</a></td>
-                <td>{{ projects[proj].Nazwa }}</td>
-                <td>{{ projects[proj].ID }}</td>
-                <td>{{ sim | round(2) }}%</td>
-            </tr>
+{% extends 'base.html' %}
+{% block title %}Sortowanie według podobieństwa{% endblock %}
+{% block content %}
+    <h2>Sortowanie według podobieństwa</h2>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <label for="reference_project">Wybierz projekt odniesienia:</label>
+        <select name="reference_project" id="reference_project">
+            {% for symbol, details in projects.items() %}
+                <option value="{{ symbol }}">{{ details.Nazwa }} ({{ symbol }})</option>
             {% endfor %}
+        </select>
+        <button type="submit">Sortuj</button>
+    </form>
+    {% if sorted_projects %}
+        <h3>Wyniki dla: {{ reference_name }} (ID: {{ reference_id }})</h3>
+        <table class="project-table">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Nazwa</th>
+                    <th>Podobieństwo (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for symbol, similarity in sorted_projects %}
+                    <tr>
+                        <td>{{ symbol }}</td>
+                        <td>{{ projects[symbol].Nazwa }}</td>
+                        <td>{{ similarity | round(2) }}%</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
         </table>
-        {% endif %}
-        <div class="nav-links">
-            <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
-        </div>
-    </div>
-</body>
-</html>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Wyszukiwanie projektów{% endblock %}
+{% block content %}
+    <h2>Wyszukiwanie projektów</h2>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <label for="search_term">Wprowadź frazę wyszukiwania:</label>
+        <input type="text" name="search_term" id="search_term" placeholder="np. nazwa lub cecha" required>
+        <button type="submit">Szukaj</button>
+    </form>
+    {% if found %}
+        <h3>Znalezione projekty</h3>
+        <ul>
+            {% for symbol in found %}
+                <li>
+                    <a href="{{ url_for('project_details', symbol=symbol) }}">{{ projects[symbol].Nazwa }}</a>
+                    (Symbol: {{ symbol }}, ID: {{ projects[symbol].ID }})
+                </li>
+            {% endfor %}
+        </ul>
+    {% elif search_term %}
+        <p class="no-projects">Brak projektów spełniających kryteria.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+{% endblock %}
