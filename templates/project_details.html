@@ -2,27 +2,27 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Szczegóły projektu</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Szczegóły Projektu</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        p { margin: 5px 0; }
+        a { text-decoration: none; color: blue; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Szczegóły projektu: {{ project.Symbol }}</h1>
-        <div class="project-details">
-            <p><strong>Nazwa:</strong> {{ project.Nazwa }}</p>
-            <p><strong>ID:</strong> {{ project.ID }}</p>
-            <h2>Cechy:</h2>
-            {% if project.Cechy %}
-                {% for feature, value in project.Cechy.items() %}
-                    <p><strong>{{ feature }}:</strong> {{ value }}</p>
-                {% endfor %}
-            {% else %}
-                <p>Brak cech dla tego projektu.</p>
-            {% endif %}
-        </div>
-        <div class="nav-links">
-            <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
-        </div>
-    </div>
+    <h1>Szczegóły Projektu: {{ symbol }}</h1>
+    <p><strong>Nazwa:</strong> {{ project.Nazwa }}</p>
+    <p><strong>ID:</strong> {{ project.ID }}</p>
+    <h2>Cechy:</h2>
+    {% if project.Cechy %}
+        {% for feature, value in project.Cechy.items() %}
+        <p><strong>{{ feature }}:</strong> {{ value }}</p>
+        {% endfor %}
+    {% else %}
+        <p>Brak cech dla tego projektu.</p>
+    {% endif %}
+    <p><a href="{{ url_for('index') }}">Powrót do listy projektów</a></p>
 </body>
 </html>

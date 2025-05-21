@@ -2,56 +2,43 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Dodaj nowy projekt</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Dodaj Projekt</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        p { margin: 5px 0; }
+        .error { color: red; }
+        form { margin-bottom: 20px; }
+        label { display: block; margin: 10px 0 5px; }
+        input, button { padding: 5px; margin-right: 10px; }
+        a { text-decoration: none; color: blue; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Dodaj nowy projekt</h1>
-        {% if error %}
-        <p class="error-message">{{ error }}</p>
-        {% endif %}
-        <form method="POST" action="{{ url_for('add_project') }}">
-            <label for="symbol">Symbol:</label>
-            <input type="text" id="symbol" name="symbol" required>
+    <h1>Dodaj Nowy Projekt</h1>
+    <p><a href="{{ url_for('index') }}">Powrót do listy projektów</a></p>
 
-            <label for="nazwa">Nazwa:</label>
-            <input type="text" id="nazwa" name="nazwa" required>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
 
-            <label for="id">ID:</label>
-            <input type="text" id="id" name="id" required>
+    <form method="post">
+        <label for="symbol">Symbol:</label>
+        <input type="text" name="symbol" id="symbol" placeholder="Np. 10.001E.0005A" required>
 
-            <h2>Istniejące cechy</h2>
-            {% for feature in available_features %}
-            <label for="{{ feature }}">{{ feature }}:</label>
-            <input type="text" id="{{ feature }}" name="{{ feature }}">
-            {% endfor %}
+        <label for="nazwa">Nazwa:</label>
+        <input type="text" name="nazwa" id="nazwa" placeholder="Np. Projekt Testowy" required>
 
-            <h2>Nowe cechy</h2>
-            <div class="new-feature">
-                <label for="new_feature_name_1">Nazwa nowej cechy:</label>
-                <input type="text" id="new_feature_name_1" name="new_feature_name">
-                <label for="new_feature_value_1">Wartość:</label>
-                <input type="text" id="new_feature_value_1" name="new_feature_value">
-            </div>
-            <div class="new-feature">
-                <label for="new_feature_name_2">Nazwa nowej cechy:</label>
-                <input type="text" id="new_feature_name_2" name="new_feature_name">
-                <label for="new_feature_value_2">Wartość:</label>
-                <input type="text" id="new_feature_value_2" name="new_feature_value">
-            </div>
-            <div class="new-feature">
-                <label for="new_feature_name_3">Nazwa nowej cechy:</label>
-                <input type="text" id="new_feature_name_3" name="new_feature_name">
-                <label for="new_feature_value_3">Wartość:</label>
-                <input type="text" id="new_feature_value_3" name="new_feature_value">
-            </div>
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id" placeholder="Np. 12345" required>
 
-            <input type="submit" value="Dodaj projekt">
-        </form>
-        <div class="new-links">
-            <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
-        </div>
-    </div>
+        {% for feature in available_features %}
+        <label for="{{ feature }}">{{ feature }}:</label>
+        <input type="text" name="{{ feature }}" id="{{ feature }}" placeholder="Np. D 032 mm">
+        {% endfor %}
+
+        <button type="submit">Dodaj Projekt</button>
+    </form>
 </body>
 </html>

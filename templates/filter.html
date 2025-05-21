@@ -2,37 +2,36 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Filtruj projekty</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Filtrowanie Projektów</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        p { margin: 5px 0; }
+        .error { color: red; }
+        form { margin-bottom: 20px; }
+        label { display: block; margin: 10px 0 5px; }
+        input, button { padding: 5px; margin-right: 10px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        a { text-decoration: none; color: blue; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Filtruj projekty</h1>
-        {% if error %}
-        <p class="error-message">{{ error }}</p>
-        {% endif %}
-        <form method="POST" action="{{ url_for('filter_projects') }}">
-            <label for="feature">Cecha:</label>
-            <select id="feature" name="feature" onchange="updateValues()">
-                <option value="" {% if not filters.feature %}selected{% endif %}>Wybierz cechę...</option>
-                {% for feature in available_features.keys() %}
-                <option value="{{ feature }}" {% if filters.feature == feature %}selected{% endif %}>{{ feature }}</option>
-                {% endfor %}
-            </select>
+    <h1>Filtrowanie Projektów</h1>
+    <p><a href="{{ url_for('index') }}">Powrót do listy projektów</a></p>
 
-            <label for="value">Wartość:</label>
-            <select id="value" name="value">
-                <option value="" {% if not filters.value %}selected{% endif %}>Wybierz wartość...</option>
-                {% if filters.feature %}
-                {% for value in available_features[filters.feature] %}
-                <option value="{{ value }}" {% if filters.value == value %}selected{% endif %}>{{ value }}</option>
-                {% endfor %}
-                {% endif %}
-            </select>
+    <form method="post">
+        {% for feature in available_features %}
+        <label for="{{ feature }}">{{ feature }}:</label>
+        <input type="text" name="{{ feature }}" id="{{ feature }}" placeholder="Wprowadź wartość">
+        {% endfor %}
+        <button type="submit">Filtruj</button>
+    </form>
 
-            <input type="submit" value="Filtruj">
-        </form>
-        {% if filtered_projects %}
+    <h2>Wyniki filtrowania</h2>
+    {% if filtered_projects %}
         <table>
             <tr>
                 <th>Symbol</th>
@@ -47,29 +46,8 @@
             </tr>
             {% endfor %}
         </table>
-        {% else %}
-        <p class="no-projects">Brak projektów spełniających kryteria.</p>
-        {% endif %}
-        <div class="nav-links">
-            <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
-        </div>
-    </div>
-    <script>
-        function updateValues() {
-            var featureSelect = document.getElementById('feature');
-            var valueSelect = document.getElementById('value');
-            var feature = featureSelect.value;
-            valueSelect.innerHTML = '<option value="" selected>Wybierz wartość...</option>';
-            if (feature) {
-                var features = {{ available_features | tojson }};
-                features[feature].forEach(function(value) {
-                    var option = document.createElement('option');
-                    option.value = value;
-                    option.text = value;
-                    valueSelect.appendChild(option);
-                });
-            }
-        }
-    </script>
+    {% else %}
+        <p>Brak projektów spełniających kryteria.</p>
+    {% endif %}
 </body>
 </html>

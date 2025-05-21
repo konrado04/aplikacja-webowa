@@ -1,18 +1,12 @@
-/* static/styles.css */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Stylizacja z kolorami firmowymi */
 body {
     font-family: 'Arial', 'Helvetica', sans-serif;
-    background-color: #F1F1F1;
-    color: #7A7A7A;
-    line-height: 1.6;
+    background-color: #F1F1F1; /* Jasnoszary */
+    color: #7A7A7A; /* Szary */
+    margin: 0;
     padding: 20px;
+    line-height: 1.6;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,210 +15,78 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
 h1 {
     font-size: 24px;
-    color: #7A7A7A;
+    color: #7A7A7A; /* Szary */
     margin-bottom: 20px;
     font-weight: bold;
 }
-
-h2 {
-    font-size: 20px;
-    color: #7A7A7A;
-    margin-bottom: 15px;
-}
-
-h3 {
-    font-size: 18px;
-    color: #7A7A7A;
-    margin-bottom: 10px;
-}
-
 .nav-links {
     margin-bottom: 20px;
 }
-
 .nav-links a {
     display: inline-block;
     padding: 10px 20px;
     margin-right: 10px;
-    background-color: #00A0E4;
+    background-color: #00A0E4; /* Główny niebieski */
     color: #FFF;
     text-decoration: none;
     border-radius: 4px;
     font-size: 16px;
     transition: background-color 0.3s;
 }
-
 .nav-links a:hover {
-    background-color: #A7DCF8;
-    color: #7A7A7A;
+    background-color: #A7DCF8; /* Jasnoniebieski */
+    color: #7A7A7A; /* Szary */
 }
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
-
 th, td {
-    border: 1px solid #F1F1F1;
+    border: 1px solid #F1F1F1; /* Jasnoszary */
     padding: 10px;
     text-align: left;
     font-size: 14px;
 }
-
 th {
-    background-color: #A7DCF8;
+    background-color: #A7DCF8; /* Jasnoniebieski */
     font-weight: bold;
-    color: #7A7A7A;
+    color: #7A7A7A; /* Szary */
 }
-
 tr:nth-child(even) {
-    background-color: #F1F1F1;
+    background-color: #F1F1F1; /* Jasnoszary */
 }
-
 tr:hover {
-    background-color: #A7DCF8;
+    background-color: #A7DCF8; /* Jasnoniebieski */
 }
-
 a {
-    color: #00A0E4;
+    color: #00A0E4; /* Główny niebieski */
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
-    color: #7A7A7A;
+    color: #7A7A7A; /* Szary */
 }
-
-form {
-    max-width: 600px;
-    margin: 20px 0;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #7A7A7A;
-}
-
-input[type="text"],
-input[type="number"],
-textarea,
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #F1F1F1;
-    border-radius: 4px;
-    font-size: 14px;
-    background-color: #FFF;
-}
-
-input[type="submit"] {
-    background-color: #00A0E4;
-    color: #FFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.no-projects {
     font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #A7DCF8;
-}
-
-.no-projects,
-.error-message {
-    font-size: 16px;
-    color: #7A7A7A;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.error-message {
-    color: #D32F2F;
-}
-
-.project-details {
+    color: #7A7A7A; /* Szary */
     margin-top: 20px;
 }
-
-.project-details p {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.project-details strong {
-    color: #7A7A7A;
-}
-
-.similarity {
-    font-size: 16px;
-    color: #7A7A7A;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.differences {
-    list-style-type: disc;
-    margin: 10px 0 20px 20px;
-    font-size: 14px;
-    color: #7A7A7A;
-}
-
-.new-feature {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #F1F1F1;
-    border-radius: 4px;
-    background-color: #F9F9F9;
-}
-
+/* Responsywność */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
-
     .nav-links a {
         display: block;
         margin: 5px 0;
     }
-
     table {
         font-size: 12px;
     }
-
     th, td {
-        padding: 8px;
-    }
-
-    form {
-        max-width: 100%;
-    }
-
-    input[type="text"],
-    input[type="number"],
-    textarea,
-    select {
-        font-size: 12px;
-    }
-
-    .similarity {
-        font-size: 14px;
-    }
-
-    .differences {
-        font-size: 12px;
-        margin-left: 15px;
-    }
-
-    .new-feature {
         padding: 8px;
     }
 }
