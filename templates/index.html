@@ -2,44 +2,40 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista Projektów</title>
+    <title>Lista projektów</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Lista Projektów</h1>
-        <p>Liczba projektów: {{ projects | length }}</p>
-        <div class="nav-links">
-            <a href="{{ url_for('add_project') }}">Dodaj nowy projekt</a>
-            <a href="{{ url_for('export_csv') }}">Eksportuj do CSV</a>
-            <a href="{{ url_for('compare_projects') }}">Porównaj projekty</a>
-            <a href="{{ url_for('filter_projects') }}">Filtruj projekty</a>
-        </div>
+        <h1>Lista projektów</h1>
         {% if projects %}
         <table>
             <tr>
                 <th>Symbol</th>
                 <th>Nazwa</th>
                 <th>ID</th>
-                {% for feature in available_features %}
-                <th>{{ feature }}</th>
-                {% endfor %}
             </tr>
             {% for symbol, details in projects.items() %}
             <tr>
                 <td><a href="{{ url_for('project_details', symbol=symbol) }}">{{ symbol }}</a></td>
                 <td>{{ details.Nazwa }}</td>
                 <td>{{ details.ID }}</td>
-                {% for feature in available_features %}
-                <td>{{ details.Cechy.get(feature, 'Brak') }}</td>
-                {% endfor %}
             </tr>
             {% endfor %}
         </table>
         {% else %}
         <p class="no-projects">Brak projektów do wyświetlenia.</p>
         {% endif %}
+        <div class="nav-links">
+            <a href="{{ url_for('add_project') }}">Dodaj nowy projekt</a>
+            <a href="{{ url_for('filter_projects') }}">Filtruj projekty</a>
+            <a href="{{ url_for('compare_projects') }}">Porównaj projekty</a>
+            <a href="{{ url_for('load_xlsx') }}">Wczytaj z XLSX</a>
+            <a href="{{ url_for('add_category_feature') }}">Dodaj kategorię/cechę</a>
+            <a href="{{ url_for('sort_similarity') }}">Sortuj wg podobieństwa</a>
+            <a href="{{ url_for('search_projects') }}">Wyszukaj projekty</a>
+            <a href="{{ url_for('export_csv') }}">Eksportuj do CSV</a>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj kategorię lub cechę</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Dodaj kategorię lub cechę</h1>
+        {% if error %}
+        <p class="error-message">{{ error }}</p>
+        {% endif %}
+        <form method="POST">
+            <label>Wybierz działanie:</label>
+            <div>
+                <input type="radio" id="category" name="choice" value="K" checked>
+                <label for="category">Dodaj kategorię</label>
+                <input type="radio" id="feature" name="choice" value="C">
+                <label for="feature">Dodaj cechę</label>
+            </div>
+
+            <label for="name">Nazwa:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="hint">Podpowiedź (dla cechy):</label>
+            <input type="text" id="hint" name="hint">
+
+            <label for="category">Kategoria (dla cechy):</label>
+            <select id="category" name="category">
+                <option value="">Wybierz kategorię...</option>
+                {% for cat in categories.keys() %}
+                <option value="{{ cat }}">{{ cat }}</option>
+                {% endfor %}
+            </select>
+
+            <input type="submit" value="Zapisz">
+        </form>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+        </div>
+    </div>
+</body>
+</html>

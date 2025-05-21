@@ -2,59 +2,67 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Porównaj Projekty</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        p { margin: 5px 0; }
-        .error { color: red; }
-        form { margin-bottom: 20px; }
-        select, button { padding: 5px; margin-right: 10px; }
-        a { text-decoration: none; color: blue; }
-        a:hover { text-decoration: underline; }
-    </style>
+    <title>Porównaj projekty</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Porównaj Projekty</h1>
-    <p><a href="{{ url_for('index') }}">Powrót do listy projektów</a></p>
-
-    {% if error %}
-        <p class="error">{{ error }}</p>
-    {% endif %}
-
-    <form method="post">
-        <label for="proj1">Wybierz pierwszy projekt:</label>
-        <select name="proj1" id="proj1">
-            {% for symbol in projects.keys() %}
-            <option value="{{ symbol }}">{{ symbol }} - {{ projects[symbol].Nazwa }}</option>
-            {% endfor %}
-        </select>
-
-        <label for="proj2">Wybierz drugi projekt:</label>
-        <select name="proj2" id="proj2">
-            {% for symbol in projects.keys() %}
-            <option value="{{ symbol }}">{{ symbol }} - {{ projects[symbol].Nazwa }}</option>
-            {% endfor %}
-        </select>
-
-        <button type="submit">Porównaj</button>
-    </form>
-
-    {% if similarity is defined %}
-        <h2>Wyniki porównania</h2>
-        <p><strong>{{ proj1 }} ({{ proj1_name }}, ID: {{ proj1_id }})</strong> vs
-           <strong>{{ proj2 }} ({{ proj2_name }}, ID: {{ proj2_id }})</strong></p>
-        <p><strong>Podobieństwo:</strong> {{ "%.2f" | format(similarity) }}%</p>
-        <h3>Różnice:</h3>
-        {% if differences %}
-            <ul>
-                {% for diff in differences %}
-                <li>{{ diff }}</li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>Brak różnic!</p>
+    <div class="container">
+        <h1>Porównaj projekty</h1>
+        {% if error %}
+        <p class="error-message">{{ error }}</p>
         {% endif %}
-    {% endif %}
+        <form method="POST" action="{{ url_for('compare_projects') }}">
+            <label for="project1">Projekt 1:</label>
+            <select id="project1" name="project1" required>
+                <option value="" disabled selected>Wybierz projekt</option>
+                {% for symbol in projects.keys() %}
+                    <option value="{{ symbol }}">{{ symbol }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="project2">Projekt 2:</label>
+            <select id="project2" name="project2" required>
+                <option value="" disabled selected>Wybierz projekt</option>
+                {% for symbol in projects.keys() %}
+                    <option value="{{ symbol }}">{{ symbol }}</option>
+                {% endfor %}
+            </select>
+
+            <input type="submit" value="Porównaj">
+        </form>
+        {% if comparison %}
+        <h2>Wynik porównania</h2>
+        {% if differences %}
+        <h3>Różnice</h3>
+        <ul class="differences">
+            {% for diff in differences %}
+            <li>{{ diff }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="no-projects">Brak różnic między projektami.</p>
+        {% endif %}
+        <p class="similarity">Podobieństwo: {{ similarity | round(2) }}%</p>
+        <table>
+            <tr>
+                <th>Cecha</th>
+                <th>{{ comparison.project1_symbol }} ({{ project1_name }})</th>
+                <th>{{ comparison.project2_symbol }} ({{ project2_name }})</th>
+            </tr>
+            {% for feature, values in comparison.features.items() %}
+            <tr>
+                <td>{{ feature }}</td>
+                <td>{{ values.project1 }}</td>
+                <td>{{ values.project2 }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p class="no-projects">Wybierz projekty do porównania.</p>
+        {% endif %}
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+        </div>
+    </div>
 </body>
 </html>

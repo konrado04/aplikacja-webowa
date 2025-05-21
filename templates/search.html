@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyszukaj projekty</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Wyszukaj projekty</h1>
+        {% if error %}
+        <p class="error-message">{{ error }}</p>
+        {% endif %}
+        <form method="POST">
+            <label for="search_term">Fraza wyszukiwania:</label>
+            <input type="text" id="search_term" name="search_term" value="{{ search_term | default('') }}">
+            <input type="submit" value="Szukaj">
+        </form>
+        {% if found is defined %}
+        {% if found %}
+        <h2>Znalezione projekty</h2>
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Nazwa</th>
+                <th>ID</th>
+            </tr>
+            {% for symbol in found %}
+            <tr>
+                <td><a href="{{ url_for('project_details', symbol=symbol) }}">{{ symbol }}</a></td>
+                <td>{{ projects[symbol].Nazwa }}</td>
+                <td>{{ projects[symbol].ID }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p class="no-projects">Nie znaleziono projektów.</p>
+        {% endif %}
+        {% endif %}
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+        </div>
+    </div>
+</body>
+</html>
