@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Błąd</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        a { text-decoration: none; color: blue; }
-        a:hover { text-decoration: underline; }
-    </style>
-</head>
-<body>
-    <h1>Błąd</h1>
-    <p>{{ message }}</p>
-    <p><a href="{{ url_for('index') }}">Powrót do listy projektów</a></p>
-</body>
-</html>
+{% extends 'base.html' %}
+   {% block title %}Błąd{% endblock %}
+   {% block content %}
+       <h2>Błąd</h2>
+       <p class="error">{{ error_message }}</p>
+       <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+   {% endblock %}

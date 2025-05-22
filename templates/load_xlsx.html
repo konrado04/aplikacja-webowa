@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+   {% block title %}Wczytaj plik XLSX{% endblock %}
+   {% block content %}
+       <h2>Wczytaj plik XLSX</h2>
+       {% if error %}
+           <p class="error">{{ error }}</p>
+       {% endif %}
+       <form method="POST" enctype="multipart/form-data">
+           <label for="file">Wybierz plik XLSX:</label>
+           <input type="file" name="file" id="file" accept=".xlsx" required>
+           <button type="submit">Wczytaj</button>
+       </form>
+       <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+   {% endblock %}

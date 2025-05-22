@@ -1,53 +1,57 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Filtrowanie Projektów</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        p { margin: 5px 0; }
-        .error { color: red; }
-        form { margin-bottom: 20px; }
-        label { display: block; margin: 10px 0 5px; }
-        input, button { padding: 5px; margin-right: 10px; }
-        table { border-collapse: collapse; width: 100%; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        a { text-decoration: none; color: blue; }
-        a:hover { text-decoration: underline; }
-    </style>
-</head>
-<body>
-    <h1>Filtrowanie Projektów</h1>
-    <p><a href="{{ url_for('index') }}">Powrót do listy projektów</a></p>
-
-    <form method="post">
-        {% for feature in available_features %}
-        <label for="{{ feature }}">{{ feature }}:</label>
-        <input type="text" name="{{ feature }}" id="{{ feature }}" placeholder="Wprowadź wartość">
-        {% endfor %}
-        <button type="submit">Filtruj</button>
-    </form>
-
-    <h2>Wyniki filtrowania</h2>
-    {% if filtered_projects %}
-        <table>
-            <tr>
-                <th>Symbol</th>
-                <th>Nazwa</th>
-                <th>ID</th>
-            </tr>
-            {% for symbol, details in filtered_projects.items() %}
-            <tr>
-                <td><a href="{{ url_for('project_details', symbol=symbol) }}">{{ symbol }}</a></td>
-                <td>{{ details.Nazwa }}</td>
-                <td>{{ details.ID }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-    {% else %}
-        <p>Brak projektów spełniających kryteria.</p>
-    {% endif %}
-</body>
-</html>
+{% extends 'base.html' %}
+   {% block title %}Filtrowanie projektów{% endblock %}
+   {% block content %}
+       <h2>Filtrowanie projektów</h2>
+       {% if error %}
+           <p class="error">{{ error }}</p>
+       {% endif %}
+       <form method="POST">
+           <label for="feature">Wybierz cechę:</label>
+           <select name="feature" id="feature" onchange="updateValues()">
+               {% for feature in available_features %}
+                   <option value="{{ feature }}" {% if filters.feature == feature %}selected{% endif %}>
+                       {{ feature }}
+                   </option>
+               {% endfor %}
+           </select>
+           <label for="value">Wybierz wartość:</label>
+           <select name="value" id="value">
+               {% if filters.feature %}
+                   {% for value in available_features[filters.feature] %}
+                       <option value="{{ value }}" {% if filters.value == value %}selected{% endif %}>
+                           {{ value }}
+                       </option>
+                   {% endfor %}
+               {% endif %}
+           </select>
+           <button type="submit">Filtruj</button>
+       </form>
+       {% if filtered_projects %}
+           <h3>Znalezione projekty</h3>
+           <ul>
+               {% for symbol, details in filtered_projects.items() %}
+                   <li>
+                       <a href="{{ url_for('project_details', symbol=symbol) }}">{{ details.Nazwa }}</a>
+                       (Symbol: {{ symbol }}, ID: {{ details.ID }})
+                   </li>
+               {% endfor %}
+           </ul>
+       {% else %}
+           <p class="no-projects">Brak projektów spełniających kryteria.</p>
+       {% endif %}
+       <script>
+           function updateValues() {
+               const featureSelect = document.getElementById('feature');
+               const valueSelect = document.getElementById('value');
+               valueSelect.innerHTML = '';
+               const features = {{ available_features | tojson }};
+               const selectedFeature = featureSelect.value;
+               features[selectedFeature].forEach(value => {
+                   const option = document.createElement('option');
+                   option.value = value;
+                   option.text = value;
+                   valueSelect.appendChild(option);
+               });
+           }
+       </script>
+   {% endblock %}

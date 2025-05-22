@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+   <html lang="pl">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>{% block title %}{% endblock %}</title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1">
+   </head>
+   <body>
+       <div class="container">
+           <h1>Aplikacja Webowa - Zarządzanie Projektami</h1>
+           <nav class="nav-links">
+               <a href="{{ url_for('index') }}">Strona główna</a>
+               <a href="{{ url_for('add_project') }}">Dodaj projekt</a>
+               <a href="{{ url_for('load_xlsx') }}">Wczytaj XLSX</a>
+               <a href="{{ url_for('compare_projects') }}">Porównaj</a>
+               <a href="{{ url_for('filter_projects') }}">Filtruj</a>
+               <a href="{{ url_for('sort_similarity') }}">Sortuj</a>
+               <a href="{{ url_for('search_projects') }}">Szukaj</a>
+               <a href="{{ url_for('export_csv') }}">Eksport CSV</a>
+           </nav>
+           {% block content %}{% endblock %}
+       </div>
+   </body>
+   </html>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+   {% block title %}Dodaj kategorię lub cechę{% endblock %}
+   {% block content %}
+       <h2>Dodaj kategorię lub cechę</h2>
+       {% if error %}
+           <p class="error">{{ error }}</p>
+       {% endif %}
+       <form method="POST">
+           <label for="choice">Wybierz typ:</label>
+           <select name="choice" id="choice">
+               <option value="K">Kategoria</option>
+               <option value="C">Cecha</option>
+           </select>
+           <label for="name">Nazwa:</label>
+           <input type="text" name="name" id="name" required>
+           <label for="hint">Podpowiedź (opcjonalne):</label>
+           <input type="text" name="hint" id="hint">
+           <label for="category">Kategoria (dla cechy):</label>
+           <select name="category" id="category">
+               <option value="">-- Wybierz kategorię --</option>
+               {% for category in categories %}
+                   <option value="{{ category }}">{{ category }}</option>
+               {% endfor %}
+           </select>
+           <button type="submit">Dodaj</button>
+       </form>
+       <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+   {% endblock %}
