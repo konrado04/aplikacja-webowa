@@ -1,27 +1,41 @@
-{% extends 'base.html' %}
-{% block title %}Wyszukiwanie projektów{% endblock %}
-{% block content %}
-    <h2>Wyszukiwanie projektów</h2>
-    {% if error %}
-        <p class="error">{{ error }}</p>
-    {% endif %}
-    <form method="POST">
-        <label for="search_term">Wprowadź frazę wyszukiwania:</label>
-        <input type="text" name="search_term" id="search_term" placeholder="np. nazwa lub cecha" required>
-        <button type="submit">Szukaj</button>
-    </form>
-    {% if found %}
-        <h3>Znalezione projekty</h3>
-        <ul>
-            {% for symbol in found %}
-                <li>
-                    <a href="{{ url_for('project_details', symbol=symbol) }}">{{ projects[symbol].Nazwa }}</a>
-                    (Symbol: {{ symbol }}, ID: {{ projects[symbol].ID }})
-                </li>
-            {% endfor %}
-        </ul>
-    {% elif search_term %}
-        <p class="no-projects">Brak projektów spełniających kryteria.</p>
-    {% endif %}
-    <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
-{% endblock %}
+<xaiArtifact artifact_id="d71491f8-fb81-4318-853a-00d5d5f8fade" artifact_version_id="d86141aa-2cb8-4eb2-92cb-3ce4df86b182" title="search.html" contentType="text/html">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyszukiwanie projektów</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% extends 'base.html' %}
+        {% block title %}Wyszukiwanie projektów{% endblock %}
+        {% block content %}
+            <h2>Wyszukiwanie projektów</h2>
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+            <form method="POST">
+                <label for="search_term">Wprowadź frazę wyszukiwania:</label>
+                <input type="text" name="search_term" id="search_term" placeholder="np. nazwa lub cecha" value="{{ search_term | default('') }}" required>
+                <button type="submit">Szukaj</button>
+            </form>
+            {% if found %}
+                <h3>Znalezione projekty</h3>
+                <ul>
+                    {% for item in found %}
+                        <li>
+                            <a href="{{ url_for('project_details', symbol=item.symbol) }}">{{ item.details.Nazwa }}</a>
+                            (Symbol: {{ item.symbol }}, ID: {{ item.details.ID }})
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% elif search_term %}
+                <p class="no-results">Brak projektów spełniających kryteria.</p>
+            {% endif %}
+            <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+        {% endblock %}
+    </div>
+</body>
+</html>

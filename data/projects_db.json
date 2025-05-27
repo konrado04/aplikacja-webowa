@@ -3,62 +3,1870 @@
         "Nazwa": "Siłownik pneumatyczny CNOMO D32x 5 dwustronnego działania z amortyzacją, bez magnesu",
         "ID": 195319,
         "Cechy": {
-            "Dodatkowy Zgarniacz": "NIE",
-            "Regulacja Kąta Obrotu": "NIE",
             "Ilość Tłoków": "Jeden",
             "Ilość Tłoczysk": "Jedno",
-            "Zabezpieczenie Przed Obrotem": "NIE",
-            "Kąt Obrotu": "Brak",
-            "Materiał Tłoczyska": "Stal Węglowa Chromowana",
-            "Materiał Tulei": "Stop Aluminium",
-            "Materiał Pokryw": "Stop Aluminium",
-            "Amortyzacja Pneumatyczna": "Z Amortyzacją Pneumatyczną",
-            "Wykonanie Specjalne": "NIE",
-            "ATEX": "NIE",
-            "Seria ": "SCN",
             "Średnica Tłoka": "D 032 mm [E]",
             "Skok Siłownika": "0005 mm",
-            "Zamontowany Osprzęt": "Brak",
             "Gwint Przyłączy": "G1/8",
-            "Ilość Przyłączy": "Dwa",
-            "Gwint Tłoczyska": "M10",
-            "Rodzaj Gwintu Tłoczyska": "Zewnętrzny",
-            "Rodzaj Tulei": "Tuleja Okrągła",
             "Tłok Magnetyczny": "NIE",
-            "Materiał Uszczelnień": "PU (Poliuretan)",
             "Średnica Tłoczyska": "12 mm",
-            "Funkcja": "Dwustronnego Działania"
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
         }
     },
     "10.001E.0008A": {
         "Nazwa": "Siłownik pneumatyczny CNOMO D32x 8 dwustronnego działania z amortyzacją, bez magnesu",
         "ID": 172341,
         "Cechy": {
-            "Regulacja Kąta Obrotu": "NIE",
-            "Dodatkowy Zgarniacz": "NIE",
-            "Zabezpieczenie Przed Obrotem": "NIE",
             "Ilość Tłoczysk": "Jedno",
-            "Materiał Tulei": "Stop Aluminium",
-            "Materiał Tłoczyska": "Stal Węglowa Chromowana",
-            "Kąt Obrotu": "Brak",
-            "Amortyzacja Pneumatyczna": "Z Amortyzacją Pneumatyczną",
-            "Materiał Pokryw": "Stop Aluminium",
-            "ATEX": "NIE",
-            "Wykonanie Specjalne": "NIE",
             "Skok Siłownika": "0008 mm",
             "Średnica Tłoka": "D 032 mm [E]",
-            "Seria ": "SCN",
-            "Ilość Przyłączy": "Dwa",
-            "Zamontowany Osprzęt": "Brak",
             "Gwint Przyłączy": "G1/8",
-            "Rodzaj Gwintu Tłoczyska": "Zewnętrzny",
-            "Gwint Tłoczyska": "M10",
-            "Materiał Uszczelnień": "PU (Poliuretan)",
-            "Rodzaj Tulei": "Tuleja Okrągła",
             "Tłok Magnetyczny": "NIE",
             "Ilość Tłoków": "Jeden",
             "Funkcja": "Dwustronnego Działania",
-            "Średnica Tłoczyska": "12 mm"
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
         }
+    },
+    "10.001E.0050A": {
+        "Nazwa": "TEST pobrania przez Radka -Siłownik pneumatyczny CNOMO D32x 50 dwustronnego działania z amort.",
+        "ID": 160141,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Dzia?‚ania",
+            "Średnica Tłoczyska": "12 mm",
+            "Skok Siłownika": "0050 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0050AK": {
+        "Nazwa": "TEST-Siłownik pneumatyczny CNOMO D32x 50 szpilki i tłoczysko nierdzewne, ",
+        "ID": 214731,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Skok Siłownika": "0050 mm",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0050AT": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 50 dwustronnego działania z amortyzacją, bez magnesu, VITON",
+        "ID": 177684,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0050 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0050KK": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 50 tuleja i tłoczysko nierdzewne, z amortyzacją, bez magnesu",
+        "ID": 182689,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0050 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0055A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 55 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 164149,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0055 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0060A": {
+        "Nazwa": "TEST Siłownik pneumatyczny CNOMO D32x 60 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 173349,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0060 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0060AT": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 60 dwustronnego działania z amortyzacją, bez magnesu, VITON",
+        "ID": 200962,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0060 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0063A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 63 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 164695,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0063 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0065A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 65 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 183546,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0065 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0070A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 70 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 163584,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0070 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0075A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 75 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 160142,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Skok Siłownika": "0075 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0080A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 80 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 160624,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0080 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0085A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 85 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 173936,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0085 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0100A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 100 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 160143,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Skok Siłownika": "0100 mm",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0100AK": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 100 szpilki i tłoczysko nierdzewne, bez magnesu",
+        "ID": 199258,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Ilość Tłoków": "Jeden",
+            "Skok Siłownika": "0100 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0100KK": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 100 tuleja i tłoczysko nierdzewne, z amortyzacją, bez magnesu",
+        "ID": 182690,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0100 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0110A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 110 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 175299,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Ilość Tłoków": "Jeden",
+            "Skok Siłownika": "0110 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0110AK": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 110 szpilki i tłoczysko nierdzewne, bez magnesu",
+        "ID": 199259,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0110 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0120A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 120 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 164151,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0120 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0125A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 125 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 160144,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Skok Siłownika": "0125 mm",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0130A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 130 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 173643,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0130 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0140A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 140 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 171070,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0140 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0150A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 150 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 160145,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0150 mm",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0150AK": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 150 szpilki i tłoczysko nierdzewne, bez magnesu",
+        "ID": 197946,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Skok Siłownika": "0150 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0150KK": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 150 tuleja i tłoczysko nierdzewne, z amortyzacją, bez magnesu",
+        "ID": 183681,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0150 mm",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0160A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 160 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 163426,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0160 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0165A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 165 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 167876,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0165 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0170A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 170 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 184515,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Skok Siłownika": "0170 mm",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0180A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 180 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 185474,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0180 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0190A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 190 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 178797,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0190 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0195A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 195 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 193883,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0195 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0200A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 200 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 162020,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0200 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0210A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 210 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 167380,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0210 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0220A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 220 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 162324,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0220 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0225A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 225 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 178184,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Ilość Tłoków": "Jeden",
+            "Skok Siłownika": "0225 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0240A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 240 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 172346,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0240 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0250A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 250 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 163876,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0250 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0275A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 275 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 180735,
+        "Cechy": {
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0275 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0280A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 280 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 169839,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0280 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0290A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 290 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 194297,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0290 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0030A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x30 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 181809,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0030 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0035A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x35 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 220299,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Skok Siłownika": "0035 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0040A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x40 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 187921,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0040 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0050A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x50 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 167729,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Skok Siłownika": "0050 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0050P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D50x50 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 161315,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0050 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0060P": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x60 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 177182,
+        "Cechy": {
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Skok Siłownika": "0060 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Tłok Magnetyczny": "NIE",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0063A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x63 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 157027,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0063 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0070A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x70 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 172568,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0070 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0075A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x75 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 182793,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Skok Siłownika": "0075 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0080A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x80 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 161704,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0080 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0090A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x90 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 187448,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0090 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0100A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x100 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 168984,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Skok Siłownika": "0100 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0110P": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x110 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 175813,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0110 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0115A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x115 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 179271,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Skok Siłownika": "0115 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0125A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x125 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 172584,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0125 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0140A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x140 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 199716,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0140 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0150A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x150 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 166424,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Skok Siłownika": "0150 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0160A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x160 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 164316,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0160 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0170A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x170 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 164170,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0170 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0200A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x200 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 161829,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0200 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0200P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D50x200 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 163351,
+        "Cechy": {
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Skok Siłownika": "0200 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Tłok Magnetyczny": "NIE",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0220A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x220 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 181262,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0220 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0250A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x250 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 161253,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0250 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0270A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x270 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 173743,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0270 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0280A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x280 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 168780,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Skok Siłownika": "0280 mm",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0280P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D50x280 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 170900,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0280 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0300A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x300 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 173665,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0300 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0300PT": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x300 dwustronne tłoczysko i amortyzacja, bez magnesu, VITON",
+        "ID": 183067,
+        "Cechy": {
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Skok Siłownika": "0300 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Tłok Magnetyczny": "NIE",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0350A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x350 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 156560,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0350 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0400A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x400 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 160573,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Skok Siłownika": "0400 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0500A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x500 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 168788,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G1/4",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0500 mm",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017G.0600A": {
+        "Nazwa": "Siłownik ISO15552/6431 D50x600 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 160992,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 050  mm [G]",
+            "Skok Siłownika": "0600 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G1/4",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0025A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x25 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 168397,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0025 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0050A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x50 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 163954,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Skok Siłownika": "0050 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0050P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D63x50 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 162083,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0050 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0075A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x75 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 200716,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0075 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0080A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x80 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 160342,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Skok Siłownika": "0080 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0100A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x100 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 156791,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0100 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0100P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D63x100 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 162808,
+        "Cechy": {
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Skok Siłownika": "0100 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Gwint Przyłączy": "G3/8",
+            "Tłok Magnetyczny": "NIE",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0120A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x120 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 165551,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Skok Siłownika": "0120 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0125A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x125 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 159058,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0125 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0125P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D63x125 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 170989,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0125 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0135A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x135 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 175830,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Skok Siłownika": "0135 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0150A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x150 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 175941,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0150 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0160A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x160 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 162599,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Skok Siłownika": "0160 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0160P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D63x160 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 168734,
+        "Cechy": {
+            "Skok Siłownika": "0160 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Tłok Magnetyczny": "NIE",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0200A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x200 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 157407,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0200 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0200AK": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x200 szpilki, nakrętki i dwustronne tłoczysko nierdzewne, bez magnesu",
+        "ID": 199962,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0200 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0230A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x230 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 176043,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Skok Siłownika": "0230 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0250A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x250 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 170319,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0250 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0250P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D63x250 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 182129,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "20 mm",
+            "Skok Siłownika": "0250 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0300A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x300 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 159234,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0300 mm",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017H.0630A": {
+        "Nazwa": "Siłownik ISO15552/6431 D63x630 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 186837,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 063 mm [H]",
+            "Skok Siłownika": "0630 mm",
+            "Średnica Tłoczyska": "20 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0010A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x10 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 174648,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "25 mm",
+            "Skok Siłownika": "0010 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0015A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x15 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 177906,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0015 mm",
+            "Średnica Tłoczyska": "25 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0025A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x25 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 182050,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "25 mm",
+            "Skok Siłownika": "0025 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0040A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x40 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 160881,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0040 mm",
+            "Średnica Tłoczyska": "25 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0050A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x50 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 173350,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "25 mm",
+            "Skok Siłownika": "0050 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0060A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x60 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 167356,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0060 mm",
+            "Średnica Tłoczyska": "25 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0070A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x70 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 190832,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "25 mm",
+            "Skok Siłownika": "0070 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0080A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x80 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 178657,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0080 mm",
+            "Średnica Tłoczyska": "25 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0100A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x100 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 168606,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "25 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0100 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0100P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D80x100 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 176767,
+        "Cechy": {
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0100 mm",
+            "Średnica Tłoczyska": "25 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Tłok Magnetyczny": "NIE",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0110A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x110 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 164320,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0110 mm",
+            "Średnica Tłoczyska": "25 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0120A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x120 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 173193,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "25 mm",
+            "Skok Siłownika": "0120 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0125A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x125 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 183354,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0125 mm",
+            "Średnica Tłoczyska": "25 mm",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0150A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x150 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 160287,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Średnica Tłoczyska": "25 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Skok Siłownika": "0150 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0160A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x160 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 156819,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0160 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "25 mm",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0200A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x200 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 165414,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Skok Siłownika": "0200 mm",
+            "Średnica Tłoczyska": "25 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0200P": {
+        "Nazwa": "Siłownik ISO 15552/6431 D80x200 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 168787,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Gwint Przyłączy": "G3/8",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "25 mm",
+            "Skok Siłownika": "0200 mm",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Seria": "STK",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.017J.0250A": {
+        "Nazwa": "Siłownik ISO15552/6431 D80x250 dwustronne tłoczysko i amortyzacja pneumatyczna, bez magnesu",
+        "ID": 184695,
+        "Cechy": {
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoka": "D 080 mm [J]",
+            "Skok Siłownika": "0250 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "25 mm",
+            "Ilość Tłoków": "Jeden",
+            "Ilość Tłoczysk": "Dwa (Dwustronne Tłoczysko)",
+            "Gwint Przyłączy": "G3/8",
+            "Seria": "SSI",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0300A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 300 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 164866,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Skok Siłownika": "0300 mm",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Ilość Tłoków": "Jeden",
+            "Funkcja": "Dwustronnego Działania",
+            "Średnica Tłoczyska": "12 mm",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "10.001E.0305A": {
+        "Nazwa": "Siłownik pneumatyczny CNOMO D32x 305 dwustronnego działania z amortyzacją, bez magnesu",
+        "ID": 163156,
+        "Cechy": {
+            "Ilość Tłoczysk": "Jedno",
+            "Średnica Tłoka": "D 032 mm [E]",
+            "Skok Siłownika": "0305 mm",
+            "Gwint Przyłączy": "G1/8",
+            "Tłok Magnetyczny": "NIE",
+            "Średnica Tłoczyska": "12 mm",
+            "Funkcja": "Dwustronnego Działania",
+            "Ilość Tłoków": "Jeden",
+            "Seria": "SCN",
+            "Ilość Przyłączy": "Dwa"
+        }
+    },
+    "11.130F.0010.ZTE": {
+        "Nazwa": "Test Cecha",
+        "ID": "17890222",
+        "Cechy": {
+            "Średnica Tłoka": "D 080 mm [J]"
+        },
+        "created_at": "2025-05-27 12:45:55"
+    },
+    "11.130F.0010.ZTE15": {
+        "Nazwa": "siłownik test 15",
+        "ID": "17890135",
+        "Cechy": {},
+        "created_at": "2025-05-27T12:39:39.251980"
+    },
+    "11.130F.0010.ZTE16": {
+        "Nazwa": "siłownik test 16",
+        "ID": "17890135",
+        "Cechy": {
+            "Ilość Przyłączy": "Dwa"
+        },
+        "created_at": "2025-05-27T13:07:55.831398"
+    },
+    "11.130F.0010.ZTE17": {
+        "Nazwa": "siłownik test 17",
+        "ID": "17890135",
+        "Cechy": {
+            "Ilość Przyłączy": "Trzy"
+        },
+        "created_at": "2025-05-27T13:09:51.441309"
     }
 }

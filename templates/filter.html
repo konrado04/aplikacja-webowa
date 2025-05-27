@@ -1,57 +1,80 @@
+<meta charset="UTF-8">
 {% extends 'base.html' %}
-   {% block title %}Filtrowanie projektów{% endblock %}
-   {% block content %}
-       <h2>Filtrowanie projektów</h2>
-       {% if error %}
-           <p class="error">{{ error }}</p>
-       {% endif %}
-       <form method="POST">
-           <label for="feature">Wybierz cechę:</label>
-           <select name="feature" id="feature" onchange="updateValues()">
-               {% for feature in available_features %}
-                   <option value="{{ feature }}" {% if filters.feature == feature %}selected{% endif %}>
-                       {{ feature }}
-                   </option>
-               {% endfor %}
-           </select>
-           <label for="value">Wybierz wartość:</label>
-           <select name="value" id="value">
-               {% if filters.feature %}
-                   {% for value in available_features[filters.feature] %}
-                       <option value="{{ value }}" {% if filters.value == value %}selected{% endif %}>
-                           {{ value }}
-                       </option>
-                   {% endfor %}
-               {% endif %}
-           </select>
-           <button type="submit">Filtruj</button>
-       </form>
-       {% if filtered_projects %}
-           <h3>Znalezione projekty</h3>
-           <ul>
-               {% for symbol, details in filtered_projects.items() %}
-                   <li>
-                       <a href="{{ url_for('project_details', symbol=symbol) }}">{{ details.Nazwa }}</a>
-                       (Symbol: {{ symbol }}, ID: {{ details.ID }})
-                   </li>
-               {% endfor %}
-           </ul>
-       {% else %}
-           <p class="no-projects">Brak projektów spełniających kryteria.</p>
-       {% endif %}
-       <script>
-           function updateValues() {
-               const featureSelect = document.getElementById('feature');
-               const valueSelect = document.getElementById('value');
-               valueSelect.innerHTML = '';
-               const features = {{ available_features | tojson }};
-               const selectedFeature = featureSelect.value;
-               features[selectedFeature].forEach(value => {
-                   const option = document.createElement('option');
-                   option.value = value;
-                   option.text = value;
-                   valueSelect.appendChild(option);
-               });
-           }
-       </script>
-   {% endblock %}
+{% block title %}Filtruj projekty{% endblock %}
+{% block content %}
+<h2>Filtruj projekty</h2>
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <p class="{{ category }}">{{ message }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+<form method="POST" class="csv-form">
+  <label for="feature">Wybierz cechę:</label>
+  <select name="feature" id="feature" required>
+    <option value="" disabled selected>Wybierz cechę</option>
+    {% for feature in available_features.keys() %}
+      <option value="{{ feature }}" {% if filters.feature == feature %}selected{% endif %}>{{ feature }}</option>
+    {% endfor %}
+  </select>
+  <label for="value">Wybierz wartość:</label>
+  <select name="value" id="value" required>
+    <option value="" disabled selected>Wybierz wartość</option>
+    {% if filters.feature %}
+      {% for val in available_features[filters.feature] %}
+        <option value="{{ val }}" {% if filters.value == val %}selected{% endif %}>{{ val }}</option>
+      {% endfor %}
+    {% endif %}
+  </select>
+  <button type="submit">Filtruj</button>
+</form>
+{% if projects %}
+  <table class="project-table">
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Nazwa</th>
+        <th>ID</th>
+        <th>Data utworzenia</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for symbol, details in projects.items() %}
+        <tr>
+          <td><a href="{{ url_for('project_details', symbol=symbol) }}">{{ symbol }}</a></td>
+          <td>{{ details.Nazwa }}</td>
+          <td>{{ details.ID }}</td>
+          <td>{{ details.created_at|default('Brak') }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p class="no-results">Brak projektów spełniających kryteria.</p>
+{% endif %}
+<a href="{{ url_for('index') }}" class="back-link">Powrót do listy projektów</a>
+{% endblock %}
+{% block scripts %}
+<script>
+  const featureSelect = document.getElementById('feature');
+  const valueSelect = document.getElementById('value');
+  const availableFeatures = {{ available_features|tojson|safe }};
+
+  featureSelect.addEventListener('change', function() {
+    const feature = this.value;
+    console.debug('Selected feature:', feature);
+    valueSelect.innerHTML = '<option value="" disabled selected>Wybierz wartość</option>';
+    if (feature && availableFeatures[feature]) {
+      availableFeatures[feature].forEach(val => {
+        const option = document.createElement('option');
+        option.value = val;
+        option.textContent = val;
+        valueSelect.appendChild(option);
+      });
+    }
+  });
+</script>
+{% endblock %}

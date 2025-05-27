@@ -1,22 +1,75 @@
+<meta charset="UTF-8">
 {% extends 'base.html' %}
-   {% block title %}Dodaj nowy projekt{% endblock %}
-   {% block content %}
-       <h2>Dodaj nowy projekt</h2>
-       {% if error %}
-           <p class="error">{{ error }}</p>
-       {% endif %}
-       <form method="POST">
-           <label for="symbol">Symbol:</label>
-           <input type="text" name="symbol" id="symbol" required>
-           <label for="nazwa">Nazwa:</label>
-           <input type="text" name="nazwa" id="nazwa" required>
-           <label for="id">ID:</label>
-           <input type="text" name="id" id="id" required>
-           {% for feature in available_features %}
-               <label for="{{ feature }}">{{ feature }}:</label>
-               <input type="text" name="{{ feature }}" id="{{ feature }}">
-           {% endfor %}
-           <button type="submit">Dodaj projekt</button>
-       </form>
-       <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
-   {% endblock %}
+{% block title %}Dodaj projekt{% endblock %}
+{% block content %}
+<h2>Dodaj nowy projekt</h2>
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <p class="{{ category }}">{{ message }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+<form method="POST" class="project-form">
+  <div class="form-group">
+    <label for="symbol">Symbol:</label>
+    <input type="text" id="symbol" name="symbol" required>
+  </div>
+  <div class="form-group">
+    <label for="nazwa">Nazwa:</label>
+    <input type="text" id="nazwa" name="nazwa" required>
+  </div>
+  <div class="form-group">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required>
+  </div>
+
+  {% for category, features in categories.items() %}
+    <h3>{{ category }}</h3>
+    {% for feature, details in features.items() %}
+      <div class="form-group">
+        <label for="{{ feature }}">{{ feature }}:</label>
+        <small>{{ details.hint }}</small>
+        <select id="{{ feature }}" name="{{ feature }}">
+          <option value="" disabled selected>Wybierz...</option>
+          {% for value in available_features.get(feature, details.get('allowed_values', [])) %}
+            <option value="{{ value }}">{{ value }}</option>
+          {% endfor %}
+        </select>
+        <label>
+          <input type="checkbox" name="new_value_flag" value="{{ feature }}:new"> Dodaj nową wartość
+        </label>
+        <input type="text" name="new_value_{{ feature }}" placeholder="Nowa wartość">
+      </div>
+    {% endfor %}
+  {% endfor %}
+
+  <h3>Nowe cechy</h3>
+  <div id="new-features">
+    <div class="form-group new-feature">
+      <input type="text" name="new_feature_name" placeholder="Nazwa cechy">
+      <input type="text" name="new_feature_value" placeholder="Wartość cechy">
+    </div>
+  </div>
+  <button type="button" onclick="addNewFeatureField()">Dodaj nową cechę</button>
+
+  <button type="submit">Zapisz projekt</button>
+</form>
+<a href="{{ url_for('index') }}" class="back-link">Powrót do listy projektów</a>
+{% endblock %}
+{% block scripts %}
+<script>
+function addNewFeatureField() {
+  const container = document.getElementById('new-features');
+  const newField = document.createElement('div');
+  newField.className = 'form-group new-feature';
+  newField.innerHTML = `
+    <input type="text" name="new_feature_name" placeholder="Nazwa cechy">
+    <input type="text" name="new_feature_value" placeholder="Wartość cechy">
+  `;
+  container.appendChild(newField);
+}
+</script>
+{% endblock %}

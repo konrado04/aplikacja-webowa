@@ -1,14 +1,31 @@
+<meta charset="UTF-8">
 {% extends 'base.html' %}
-   {% block title %}Wczytaj plik XLSX{% endblock %}
-   {% block content %}
-       <h2>Wczytaj plik XLSX</h2>
-       {% if error %}
-           <p class="error">{{ error }}</p>
-       {% endif %}
-       <form method="POST" enctype="multipart/form-data">
-           <label for="file">Wybierz plik XLSX:</label>
-           <input type="file" name="file" id="file" accept=".xlsx" required>
-           <button type="submit">Wczytaj</button>
-       </form>
-       <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
-   {% endblock %}
+{% block title %}Wczytaj plik CSV{% endblock %}
+{% block content %}
+    <h2>Wczytaj plik CSV</h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <p class="{{ category }}">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form method="POST" enctype="multipart/form-data" class="csv-form">
+        <label for="file">Wybierz plik CSV:</label>
+        <div class="file-upload">
+            <input type="file" name="file" id="file" accept=".csv" required>
+            <label for="file">Wybierz plik</label>
+            <span class="file-name">Nie wybrano pliku</span>
+        </div>
+        <button type="submit">Wczytaj</button>
+    </form>
+    <a href="{{ url_for('index') }}" class="back-link">Powrót do listy projektów</a>
+{% endblock %}
+{% block scripts %}
+    <script>
+        document.getElementById('file').addEventListener('change', function() {
+            var fileName = this.files[0] ? this.files[0].name : 'Nie wybrano pliku';
+            this.parentElement.querySelector('.file-name').textContent = fileName;
+        });
+    </script>
+{% endblock %}

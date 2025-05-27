@@ -1,0 +1,776 @@
+{
+    "Pneumatyka": {
+        "Średnica Tłoka": {
+            "hint": "Format: 'D XXX mm [E]', 'D XXX mm [H]' lub 'D XXX mm [J]' (np. 'D 032 mm [E]')",
+            "pattern": "^D \\d{3} mm \\[[EHJ]\\]$",
+            "allowed_values": [
+                "D 032 mm [E]",
+                "D 063 mm [H]",
+                "D 080 mm [J]"
+            ]
+        },
+        "Skok Siłownika": {
+            "hint": "Format: 'XXXX mm' (np. '0020 mm', 4 cyfry)",
+            "pattern": "^\\d{4} mm$",
+            "allowed_values": [
+                "0005 mm",
+                "0008 mm",
+                "0050 mm",
+                "0055 mm",
+                "0060 mm",
+                "0063 mm",
+                "0065 mm",
+                "0070 mm",
+                "0075 mm",
+                "0080 mm",
+                "0085 mm",
+                "0100 mm",
+                "0110 mm",
+                "0120 mm",
+                "0125 mm",
+                "0130 mm",
+                "0140 mm",
+                "0150 mm",
+                "0160 mm",
+                "0165 mm",
+                "0170 mm",
+                "0180 mm",
+                "0190 mm",
+                "0195 mm",
+                "0200 mm",
+                "0210 mm",
+                "0220 mm",
+                "0225 mm",
+                "0240 mm",
+                "0250 mm",
+                "0275 mm",
+                "0280 mm",
+                "0290 mm",
+                "0030 mm",
+                "0035 mm",
+                "0040 mm",
+                "0090 mm",
+                "0115 mm",
+                "0270 mm",
+                "0300 mm",
+                "0350 mm",
+                "0400 mm",
+                "0500 mm",
+                "0600 mm",
+                "0025 mm",
+                "0135 mm",
+                "0230 mm",
+                "0630 mm",
+                "0010 mm",
+                "0015 mm",
+                "0305 mm"
+            ]
+        },
+        "Ilość Tłoków": {
+            "hint": "Wybierz: 'Jeden' lub 'Dwa'",
+            "allowed_values": [
+                "Jeden",
+                "Dwa"
+            ]
+        },
+        "Ilość Tłoczysk": {
+            "hint": "Wybierz: 'Jedno' lub 'Dwa (Dwustronne Tłoczysko)'",
+            "allowed_values": [
+                "Jedno",
+                "Dwa (Dwustronne Tłoczysko)"
+            ]
+        },
+        "Gwint Przyłączy": {
+            "hint": "Wybierz: 'M5', 'G1/8', 'G3/8'",
+            "allowed_values": [
+                "M5",
+                "G1/8",
+                "G3/8",
+                "G1/4"
+            ]
+        },
+        "Tłok Magnetyczny": {
+            "hint": "Wybierz: 'TAK' lub 'NIE'",
+            "allowed_values": [
+                "TAK",
+                "NIE"
+            ]
+        },
+        "Ilość Przyłączy": {
+            "hint": "Wybierz: 'Jeden' lub 'Dwa'",
+            "allowed_values": [
+                "Jeden",
+                "Dwa"
+            ]
+        },
+        "Średnica Tłoczyska": {
+            "hint": "Format: 'XX mm' (np. '12 mm')",
+            "pattern": "^\\d{1,2} mm$",
+            "allowed_values": [
+                "12 mm",
+                "20 mm",
+                "25 mm"
+            ]
+        }
+    },
+    "Mechanika": {
+        "Zabezpieczenie Przed Obrotem": {
+            "hint": "Wybierz: 'TAK' lub 'NIE'",
+            "allowed_values": [
+                "TAK",
+                "NIE"
+            ]
+        },
+        "Regulacja Kąta Obrotu": {
+            "hint": "Wybierz: 'TAK' lub 'NIE'",
+            "allowed_values": [
+                "TAK",
+                "NIE"
+            ]
+        },
+        "Kąt Obrotu": {
+            "hint": "Format: 'XX°' (np. '90°') lub 'Brak'",
+            "pattern": "^\\d+°|Brak$",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Amortyzacja Pneumatyczna": {
+            "hint": "Wybierz: 'Z Amortyzacją Pneumatyczną' lub 'Bez Amortyzacji Pneumatycznej'",
+            "allowed_values": [
+                "Z Amortyzacją Pneumatyczną",
+                "Bez Amortyzacji Pneumatycznej",
+                "Z AmortyzacjA... PneumatycznA..."
+            ]
+        },
+        "Gwint Tłoczyska": {
+            "hint": "Wybierz: 'M10', 'M6', 'M16x1,5', 'M20x1,5'",
+            "allowed_values": [
+                "M10",
+                "M6",
+                "M16x1,5",
+                "M20x1,5"
+            ]
+        },
+        "Rodzaj Gwintu Tłoczyska": {
+            "hint": "Wybierz: 'Zewnętrzny' lub 'Wewnętrzny'",
+            "allowed_values": [
+                "Zewnętrzny",
+                "Wewnętrzny"
+            ]
+        }
+    },
+    "Materiały": {
+        "Materiał Tłoczyska": {
+            "hint": "Wybierz: 'Stal Węglowa Chromowana' lub 'Stal Kwasoodporna'",
+            "allowed_values": [
+                "Stal Węglowa Chromowana",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Materiał Tulei": {
+            "hint": "Wybierz: 'Stop Aluminium' lub 'Stal Kwasoodporna'",
+            "allowed_values": [
+                "Stop Aluminium",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Materiał Pokryw": {
+            "hint": "Wybierz: 'Stop Aluminium' lub 'Stal Kwasoodporna'",
+            "allowed_values": [
+                "Stop Aluminium",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Materiał Uszczelnień": {
+            "hint": "Wybierz: 'PU (Poliuretan)' lub 'VITON'",
+            "allowed_values": [
+                "PU (Poliuretan)",
+                "VITON"
+            ]
+        },
+        "Rodzaj Tulei": {
+            "hint": "Wybierz: 'Tuleja Okrągła', 'Tuleja Profilowa z Kanałkiem Trapezowym' lub 'Tuleja Kształtowa'",
+            "allowed_values": [
+                "Tuleja Okrągła",
+                "Tuleja Profilowa z Kanałkiem Trapezowym",
+                "Tuleja Kształtowa"
+            ]
+        }
+    },
+    "Dodatki": {
+        "Dodatkowy Zgarniacz": {
+            "hint": "Wybierz: 'TAK' lub 'NIE'",
+            "allowed_values": [
+                "TAK",
+                "NIE"
+            ]
+        },
+        "Zamontowany Osprzęt": {
+            "hint": "Wybierz: 'Brak'",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Wykonanie Specjalne": {
+            "hint": "Wybierz: 'TAK' lub 'NIE'",
+            "allowed_values": [
+                "TAK",
+                "NIE"
+            ]
+        },
+        "ATEX": {
+            "hint": "Wybierz: 'TAK' lub 'NIE'",
+            "allowed_values": [
+                "TAK",
+                "NIE"
+            ]
+        }
+    },
+    "Inne": {
+        "Seria": {
+            "hint": "Wybierz: 'SCN', 'SDK', 'SSI', 'STK'",
+            "allowed_values": [
+                "SCN",
+                "SDK",
+                "SSI",
+                "STK"
+            ]
+        },
+        "Funkcja": {
+            "hint": "Wybierz: 'Dwustronnego Działania'",
+            "allowed_values": [
+                "Dwustronnego Działania"
+            ]
+        },
+        "Dodatkowy Zgarniacz": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Regulacja Kąta Obrotu": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Ilość Tłoków": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Jeden"
+            ]
+        },
+        "Ilość Tłoczysk": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Jedno",
+                "Dwa (Dwustronne Tłoczysko)"
+            ]
+        },
+        "Zabezpieczenie Przed Obrotem": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Kąt Obrotu": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Materiał Tłoczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stal Węglowa Chromowana",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Materiał Tulei": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stop Aluminium",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Materiał Pokryw": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stop Aluminium",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Amortyzacja Pneumatyczna": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Z Amortyzacją Pneumatyczną",
+                "Z AmortyzacjA... PneumatycznA..."
+            ]
+        },
+        "Wykonanie Specjalne": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "ATEX": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Średnica Tłoka": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "D 032 mm [E]",
+                "D 063 mm [H]",
+                "D 080 mm [J]"
+            ]
+        },
+        "Skok Siłownika": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "0005 mm",
+                "0008 mm",
+                "0050 mm",
+                "0055 mm",
+                "0060 mm",
+                "0063 mm",
+                "0065 mm",
+                "0070 mm",
+                "0075 mm",
+                "0080 mm",
+                "0085 mm",
+                "0100 mm",
+                "0110 mm",
+                "0120 mm",
+                "0125 mm",
+                "0130 mm",
+                "0140 mm",
+                "0150 mm",
+                "0160 mm",
+                "0165 mm",
+                "0170 mm",
+                "0180 mm",
+                "0190 mm",
+                "0195 mm",
+                "0200 mm",
+                "0210 mm",
+                "0220 mm",
+                "0225 mm",
+                "0240 mm",
+                "0250 mm",
+                "0275 mm",
+                "0280 mm",
+                "0290 mm",
+                "0030 mm",
+                "0035 mm",
+                "0040 mm",
+                "0090 mm",
+                "0115 mm",
+                "0270 mm",
+                "0300 mm",
+                "0350 mm",
+                "0400 mm",
+                "0500 mm",
+                "0600 mm",
+                "0025 mm",
+                "0135 mm",
+                "0230 mm",
+                "0630 mm",
+                "0010 mm",
+                "0015 mm",
+                "0305 mm"
+            ]
+        },
+        "Zamontowany Osprzęt": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Gwint Przyłączy": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "G1/8",
+                "G1/4",
+                "G3/8"
+            ]
+        },
+        "Ilość Przyłączy": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Dwa"
+            ]
+        },
+        "Gwint Tłoczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "M10",
+                "M16x1,5",
+                "M20x1,5"
+            ]
+        },
+        "Rodzaj Gwintu Tłoczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Zewnętrzny"
+            ]
+        },
+        "Rodzaj Tulei": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Tuleja Okrągła",
+                "Tuleja Kształtowa"
+            ]
+        },
+        "Tłok Magnetyczny": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Materiał Uszczelnień": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "PU (Poliuretan)",
+                "VITON"
+            ]
+        },
+        "Średnica Tłoczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "12 mm",
+                "20 mm",
+                "25 mm"
+            ]
+        },
+        "Regulacja Kata Obrotu": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Ilosc Tokow": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Jeden"
+            ]
+        },
+        "Ilosc Toczysk": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Jedno",
+                "Dwa (Dwustronne Toczysko)"
+            ]
+        },
+        "Kat Obrotu": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Materia Toczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stal Weglowa Chromowana",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Materia Tulei": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stop Aluminium",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Materia Pokryw": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stop Aluminium",
+                "Stal Kwasoodporna"
+            ]
+        },
+        "Skok Siownika": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "0005 mm",
+                "0008 mm",
+                "0050 mm",
+                "0055 mm",
+                "0060 mm",
+                "0063 mm",
+                "0065 mm",
+                "0070 mm",
+                "0075 mm",
+                "0080 mm",
+                "0085 mm",
+                "0100 mm",
+                "0110 mm",
+                "0120 mm",
+                "0125 mm",
+                "0130 mm",
+                "0140 mm",
+                "0150 mm",
+                "0160 mm",
+                "0165 mm",
+                "0170 mm",
+                "0180 mm",
+                "0190 mm",
+                "0195 mm",
+                "0200 mm",
+                "0210 mm",
+                "0220 mm",
+                "0225 mm",
+                "0240 mm",
+                "0250 mm",
+                "0275 mm",
+                "0280 mm",
+                "0290 mm",
+                "0030 mm",
+                "0035 mm",
+                "0040 mm",
+                "0090 mm",
+                "0115 mm",
+                "0270 mm",
+                "0300 mm",
+                "0350 mm",
+                "0400 mm",
+                "0500 mm",
+                "0600 mm",
+                "0025 mm",
+                "0135 mm",
+                "0230 mm",
+                "0630 mm",
+                "0010 mm",
+                "0015 mm",
+                "0305 mm"
+            ]
+        },
+        "Zamontowany Osprzet": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Gwint Przyaczy": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "G1/8",
+                "G1/4",
+                "G3/8"
+            ]
+        },
+        "Ilosc Przyaczy": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Dwa"
+            ]
+        },
+        "Gwint Toczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "M10",
+                "M16x1,5",
+                "M20x1,5"
+            ]
+        },
+        "Rodzaj Gwintu Toczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Zewnetrzny"
+            ]
+        },
+        "Tok Magnetyczny": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Materia Uszczelnien": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "PU (Poliuretan)",
+                "VITON"
+            ]
+        },
+        "Srednica Toczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "12 mm",
+                "20 mm",
+                "25 mm"
+            ]
+        },
+        "Regulacja KÄ…ta Obrotu": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Materia?‚ Uszczelnie?„": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "PU (Poliuretan)"
+            ]
+        },
+        "Ilo?›Ä‡ T?‚oczysk": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Jedno"
+            ]
+        },
+        "Ilo?›Ä‡ T?‚ok??w": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Jeden"
+            ]
+        },
+        "KÄ…t Obrotu": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Materia?‚ Pokryw": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stop Aluminium"
+            ]
+        },
+        "Materia?‚ Tulei": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stop Aluminium"
+            ]
+        },
+        "Gwint Przy?‚Ä…czy": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "G1/8"
+            ]
+        },
+        "Zamontowany OsprzÄ™t": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Ilo?›Ä‡ Przy?‚Ä…czy": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Dwa"
+            ]
+        },
+        "Gwint T?‚oczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "M10"
+            ]
+        },
+        "T?‚ok Magnetyczny": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "?šrednica T?‚oczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "12 mm"
+            ]
+        },
+        "Skok Si?‚ownika": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "0050 mm"
+            ]
+        },
+        "Regulacja KA...ta Obrotu": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "Materia? Uszczelnie?": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "PU (Poliuretan)"
+            ]
+        },
+        "Ilo?A T?oczysk": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Jedno"
+            ]
+        },
+        "Ilo?A T?ok??w": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Jeden"
+            ]
+        },
+        "KA...t Obrotu": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Materia? Pokryw": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stop Aluminium"
+            ]
+        },
+        "Materia? Tulei": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Stop Aluminium"
+            ]
+        },
+        "Gwint Przy?A...czy": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "G1/8"
+            ]
+        },
+        "Zamontowany OsprzATMt": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Brak"
+            ]
+        },
+        "Ilo?A Przy?A...czy": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "Dwa"
+            ]
+        },
+        "Gwint T?oczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "M10"
+            ]
+        },
+        "T?ok Magnetyczny": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "NIE"
+            ]
+        },
+        "?srednica T?oczyska": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "12 mm"
+            ]
+        },
+        "Skok Si?ownika": {
+            "hint": "Wprowadź wartość tekstową",
+            "allowed_values": [
+                "0050 mm"
+            ]
+        }
+    },
+    "Test Cecha": {}
+}

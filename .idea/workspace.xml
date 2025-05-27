@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc38c2af-8349-40b6-aaf0-41338157f92a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Aplikacja webowa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Aplikacja webowa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/projects_db.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/projects_db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/add_category_feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_category_feature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/add_project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
@@ -12,8 +17,9 @@
       <change beforePath="$PROJECT_DIR$/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/filter.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/load_xlsx.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/load_xlsx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/load_csv.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/load_csv.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/project_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +38,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.app.executor": "Run",
-    "Python.asgi.executor": "Run",
-    "Python.manage.executor": "Run",
-    "Python.program prema okienka.executor": "Run",
-    "Python.settings.executor": "Run",
-    "Python.urls.executor": "Run",
-    "Python.wsgi.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/PC/Desktop/Aplikacja webowa",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.asgi.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.program prema okienka.executor&quot;: &quot;Run&quot;,
+    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.urls.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wsgi.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/Aplikacja webowa&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\Desktop\Aplikacja webowa" />
@@ -70,6 +77,17 @@
       <updated>1746977011878</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>

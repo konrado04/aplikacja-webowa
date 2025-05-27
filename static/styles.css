@@ -1,8 +1,8 @@
 /* Stylizacja z kolorami firmowymi */
 body {
-    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #F1F1F1; /* Jasnoszary */
-    color: #7A7A7A; /* Szary */
+    color: #333333; /* Ciemniejszy szary dla lepszej czytelności */
     margin: 0;
     padding: 20px;
     line-height: 1.6;
@@ -11,50 +11,42 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #FFF;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
 h1, h2, h3 {
-    color: #7A7A7A; /* Szary */
-    margin-bottom: 20px;
+    color: #333333;
+    margin-bottom: 25px;
     font-weight: bold;
 }
 
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-h3 {
-    font-size: 18px;
-}
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
 
 .nav-links {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
-.nav-links a {
+.nav-links a, .back-link {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 5px;
     background-color: #00A0E4; /* Główny niebieski */
-    color: #FFF;
+    color: #FFFFFF;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 16px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
-.nav-links a:hover {
-    background-color: #A7DCF8; /* Jasnoniebieski */
-    color: #7A7A7A; /* Szary */
+.nav-links a:hover, .back-link:hover {
+    background-color: #007BB5; /* Ciemniejszy niebieski */
+    transform: translateY(-2px);
 }
 
 .project-table {
@@ -64,106 +56,253 @@ h3 {
 }
 
 .project-table th, .project-table td {
-    border: 1px solid #F1F1F1; /* Jasnoszary */
-    padding: 10px;
+    border: 1px solid #E0E0E0;
+    padding: 12px;
     text-align: left;
     font-size: 14px;
 }
 
 .project-table th {
-    background-color: #A7DCF8; /* Jasnoniebieski */
+    background-color: #A7C2F8; /* Jasnoniebieski */
     font-weight: bold;
-    color: #7A7A7A; /* Szary */
+    color: #333333;
 }
 
 .project-table tr:nth-child(even) {
-    background-color: #F1F1F1; /* Jasnoszary */
+    background-color: #F9F9F9;
 }
 
 .project-table tr:hover {
-    background-color: #A7DCF8; /* Jasnoniebieski */
+    background-color: #E3F0FF;
 }
 
 a {
-    color: #00A0E4; /* Główny niebieski */
+    color: #00A0E4;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #7A7A7A; /* Szary */
+    color: #007BB5;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 li {
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 16px;
 }
 
 form {
-    margin: 20px 0;
+    margin: 30px 0;
+}
+
+.csv-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    color: #7A7A7A; /* Szary */
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
 }
 
 input[type="text"],
 input[type="file"],
 select {
     width: 100%;
-    max-width: 300px;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #F1F1F1; /* Jasnoszary */
-    border-radius: 4px;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D0D0D0;
+    border-radius: 6px;
     font-size: 14px;
     box-sizing: border-box;
+    background-color: #FAFAFA;
+}
+
+.file-upload {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00A0E4;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.file-upload label:hover {
+    background-color: #007BB5;
+    transform: translateY(-2px);
+}
+
+.file-upload span {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #666666;
 }
 
 button {
-    background-color: #00A0E4; /* Główny niebieski */
-    color: #FFF;
-    padding: 10px 20px;
+    background-color: #00A0E4;
+    color: #FFFFFF;
+    padding: 12px 24px;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 6px;
+    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 button:hover {
-    background-color: #A7DCF8; /* Jasnoniebieski */
+    background-color: #007BB5;
+    transform: translateY(-2px);
+}
+
+.delete-button {
+    background-color: #D32F2F; /* Czerwony dla usuwania */
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.delete-button:hover {
+    background-color: #B71C1C; /* Ciemniejszy czerwony */
+    transform: translateY(-2px);
 }
 
 .error {
     color: #D32F2F; /* Czerwony dla błędów */
-    font-size: 16px;
+    font-size: 14px; /* Zmniejszono dla lepszej proporcji */
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 500;
+    padding: 12px;
+    background-color: #FFEBEE;
+    border-radius: 6px;
+    border: 1px solid #FFCDD2;
 }
 
-.no-projects {
+.success {
+    color: #2E7D32; /* Zielony dla sukcesu */
+    font-size: 14px; /* Zmniejszono dla lepszej proporcji */
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding: 12px;
+    background-color: #E8F5E9;
+    border-radius: 6px;
+    border: 1px solid #C8E6C9;
+}
+
+.no-results {
     font-size: 16px;
-    color: #7A7A7A; /* Szary */
+    color: #333333;
     margin-top: 20px;
+    font-style: italic;
 }
 
-/* Responsywność */
+.category {
+    margin-top: 25px;
+    padding: 15px;
+    border-left: 4px solid #00A0E4;
+    background-color: #F9F9F9;
+    border-radius: 6px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+.hint {
+    font-size: 0.9em;
+    color: #666666;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.new-feature {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+}
+
+.new-feature .field {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.new-feature .field input {
+    flex: 1;
+    min-width: 150px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.input-group select {
+    flex: 1;
+    max-width: 250px;
+    background-color: #FAFAFA;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.new-value-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.new-value-field input[type="text"] {
+    max-width: 250px;
+}
+
+/* Responsywne projektowanie */
 @media (max-width: 768px) {
     .container {
-        padding: 10px;
+        padding: 15px;
     }
-    .nav-links a {
+    .nav-links a, .back-link {
         display: block;
-        margin: 5px 0;
+        margin: 8px 0;
     }
     .project-table {
         font-size: 12px;
@@ -171,9 +310,64 @@ button:hover {
     .project-table th, .project-table td {
         padding: 8px;
     }
+    .csv-form {
+        padding: 15px;
+    }
     input[type="text"],
     input[type="file"],
-    select {
+    select,
+    .file-upload,
+    .file-upload label {
         max-width: 100%;
     }
-}
+    .form-group {
+        padding: 10px;
+    }
+    .new-feature .field,
+    .input-group,
+    .new-value-field {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input-group select,
+    .input-group button,
+    .new-value-field input,
+    .file-upload label {
+        width: 100%;
+        max-width: 100%;
+    }
+    .project-form {
+      margin: 20px 0;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+    .form-group input, .form-group select {
+      width: 100%;
+      max-width: 300px;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .form-group small {
+      display: block;
+      color: #666;
+    }
+    .new-feature {
+      display: flex;
+      gap: 10px;
+    }
+    .flash-messages .error {
+      color: #e74c3c;
+    }
+    .flash-messages .success {
+      color: #2ecc71;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+    }
+    }

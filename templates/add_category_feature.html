@@ -1,28 +1,149 @@
 {% extends 'base.html' %}
-   {% block title %}Dodaj kategorię lub cechę{% endblock %}
-   {% block content %}
-       <h2>Dodaj kategorię lub cechę</h2>
-       {% if error %}
-           <p class="error">{{ error }}</p>
-       {% endif %}
-       <form method="POST">
-           <label for="choice">Wybierz typ:</label>
-           <select name="choice" id="choice">
-               <option value="K">Kategoria</option>
-               <option value="C">Cecha</option>
-           </select>
-           <label for="name">Nazwa:</label>
-           <input type="text" name="name" id="name" required>
-           <label for="hint">Podpowiedź (opcjonalne):</label>
-           <input type="text" name="hint" id="hint">
-           <label for="category">Kategoria (dla cechy):</label>
-           <select name="category" id="category">
-               <option value="">-- Wybierz kategorię --</option>
-               {% for category in categories %}
-                   <option value="{{ category }}">{{ category }}</option>
-               {% endfor %}
-           </select>
-           <button type="submit">Dodaj</button>
-       </form>
-       <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
-   {% endblock %}
+{% block title %}
+{% if edit_mode %}
+Edytuj {{ 'Kategorię' if form_data.choice == 'K' else 'Cechę' }}
+{% else %}
+Dodaj Kategorię lub Cechę
+{% endif %}
+{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <h2>
+        {% if edit_mode %}
+        Edytuj {{ 'Kategorię' if form_data.choice == 'K' else 'Cechę' }}
+        {% else %}
+        Dodaj Kategorię lub Cechę
+        {% endif %}
+    </h2>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="alert-container">
+            {% for category, message in messages %}
+            <div class="alert alert-{{ 'danger' if category == 'error' else 'success' }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Add/Edit Form -->
+    <form method="POST" action="{{ url_for('add_category_feature') }}" class="csv-form">
+        <div class="form-group">
+            <label for="choice" class="form-label">Typ:</label>
+            <select name="choice" id="choice" class="form-select" required onchange="toggleCategoryField()">
+                <option value="K" {% if form_data.choice == 'K' %}selected{% endif %}>Kategoria</option>
+                <option value="C" {% if form_data.choice == 'C' %}selected{% endif %}>Cecha</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="category-group" {% if form_data.choice == 'K' %}style="display: none;"{% endif %}>
+            <label for="category" class="form-label">Kategoria:</label>
+            <select name="category" id="category" class="form-select">
+                <option value="">Wybierz kategorię</option>
+                {% for cat in categories.keys() %}
+                <option value="{{ cat }}" {% if form_data.category == cat %}selected{% endif %}>{{ cat }}</option>
+                {% endfor %}
+            </select>
+            <small class="hint">Wybierz kategorię, do której dodasz cechę.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="form-label">Nazwa:</label>
+            <input type="text" name="name" id="name" class="form-control" value="{{ form_data.name }}" required>
+            <small class="hint">Podaj nazwę kategorii lub cechy (np. "Hydraulika" lub "Ciśnienie").</small>
+        </div>
+
+        <div class="form-group">
+            <label for="hint" class="form-label">Podpowiedź (opcjonalna):</label>
+            <input type="text" name="hint" id="hint" class="form-control" value="{{ form_data.hint }}">
+            <small class="hint">Podaj wskazówkę dla użytkownika (np. "Wybierz: TAK lub NIE").</small>
+        </div>
+
+        {% if edit_mode %}
+        <input type="hidden" name="original_name" value="{{ form_data.name }}">
+        <input type="hidden" name="original_category" value="{{ form_data.category }}">
+        <input type="hidden" name="action" value="edit">
+        {% else %}
+        <input type="hidden" name="action" value="add">
+        {% endif %}
+
+        <div class="input-group">
+            <button type="submit" class="btn btn-primary">
+                {% if edit_mode %}Zapisz zmiany{% else %}Dodaj{% endif %}
+            </button>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary">Anuluj</a>
+        </div>
+    </form>
+
+    <!-- Existing Categories and Features -->
+    <div class="mt-4">
+        <h3>Istniejące Kategorie i Cechy</h3>
+        {% if categories %}
+        {% for category, features in categories.items() %}
+        <div class="category">
+            <h4>{{ category }}</h4>
+            <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;">
+                <input type="hidden" name="category_name" value="{{ category }}">
+                <input type="hidden" name="action" value="edit_category">
+                <button type="submit" class="btn btn-sm btn-primary">Edytuj</button>
+            </form>
+            <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;" onsubmit="return confirm('Czy na pewno chcesz usunąć kategorię {{ category }}?');">
+                <input type="hidden" name="category_name" value="{{ category }}">
+                <input type="hidden" name="action" value="delete_category">
+                <button type="submit" class="btn btn-sm delete-button">Usuń</button>
+            </form>
+            {% if features %}
+            <ul>
+                {% for feature, details in features.items() %}
+                <li>
+                    {{ feature }} (Podpowiedź: {{ details.hint or 'Brak' }})
+                    <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;">
+                        <input type="hidden" name="category_name" value="{{ category }}">
+                        <input type="hidden" name="feature_name" value="{{ feature }}">
+                        <input type="hidden" name="action" value="edit_feature">
+                        <button type="submit" class="btn btn-sm btn-primary">Edytuj</button>
+                    </form>
+                    <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;" onsubmit="return confirm('Czy na pewno chcesz usunąć cechę {{ feature }}?');">
+                        <input type="hidden" name="category_name" value="{{ category }}">
+                        <input type="hidden" name="feature_name" value="{{ feature }}">
+                        <input type="hidden" name="action" value="delete_feature">
+                        <button type="submit" class="btn btn-sm delete-button">Usuń</button>
+                    </form>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="no-results">Brak cech w tej kategorii.</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+        {% else %}
+        <p class="no-results">Brak kategorii.</p>
+        {% endif %}
+    </div>
+
+    <!-- Back to Index -->
+    <div class="mt-3">
+        <a href="{{ url_for('index') }}" class="back-link">Powrót do listy projektów</a>
+    </div>
+</div>
+
+<script>
+function toggleCategoryField() {
+    const choice = document.getElementById('choice').value;
+    const categoryGroup = document.getElementById('category-group');
+    if (choice === 'C') {
+        categoryGroup.style.display = 'block';
+        document.getElementById('category').required = true;
+    } else {
+        categoryGroup.style.display = 'none';
+        document.getElementById('category').required = false;
+    }
+}
+document.addEventListener('DOMContentLoaded', toggleCategoryField);
+</script>
+{% endblock %}
