@@ -1,23 +1,43 @@
 {% extends 'base.html' %}
-{% block title %}Sortowanie według podobieństwa{% endblock %}
+{% block title %}Sortuj według podobieństwa{% endblock %}
 {% block content %}
-    <h2>Sortowanie według podobieństwa</h2>
-    {% if error %}
-        <p class="error">{{ error }}</p>
-    {% endif %}
-    <form method="POST">
-        <label for="reference_project">Wybierz projekt odniesienia:</label>
-        <select name="reference_project" id="reference_project">
-            {% for symbol, details in projects.items() %}
-                <option value="{{ symbol }}">{{ details.Nazwa }} ({{ symbol }})</option>
+<div class="container mt-4">
+    <h2>Sortuj według podobieństwa</h2>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="alert-container">
+            {% for category, message in messages %}
+            <div class="alert alert-{{ 'danger' if category == 'error' else 'success' }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             {% endfor %}
-        </select>
-        <button type="submit">Sortuj</button>
+        </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Form to Select Reference Project -->
+    <form method="POST" action="{{ url_for('sort_similarity') }}">
+        <div class="mb-3">
+            <label for="reference_project" class="form-label">Wybierz projekt odniesienia:</label>
+            <select name="reference_project" id="reference_project" class="form-select" required>
+                <option value="">Wybierz projekt</option>
+                {% for symbol, details in projects.items() %}
+                <option value="{{ symbol }}">{{ symbol }} - {{ details.Nazwa }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Sortuj</button>
     </form>
-    {% if sorted_projects %}
-        <h3>Wyniki dla: {{ reference_name }} (ID: {{ reference_id }})</h3>
-        <table class="project-table">
-            <thead>
+
+    <!-- Results Table -->
+    {% if sorted_similarities %}
+    <div class="mt-4">
+        <h4>Wyniki dla projektu: {{ reference_name }} (ID: {{ reference_id }})</h4>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
                 <tr>
                     <th>Symbol</th>
                     <th>Nazwa</th>
@@ -25,15 +45,25 @@
                 </tr>
             </thead>
             <tbody>
-                {% for symbol, similarity in sorted_projects %}
-                    <tr>
-                        <td>{{ symbol }}</td>
-                        <td>{{ projects[symbol].Nazwa }}</td>
-                        <td>{{ similarity | round(2) }}%</td>
-                    </tr>
+                {% for symbol, similarity in sorted_similarities %}
+                <tr>
+                    <td>{{ symbol }}</td>
+                    <td>{{ projects[symbol].Nazwa }}</td>
+                    <td>{{ "%.2f" % similarity }}</td>
+                </tr>
                 {% endfor %}
             </tbody>
         </table>
+    </div>
+    {% elif reference_project %}
+    <div class="alert alert-info mt-4">
+        Brak wyników do wyświetlenia.
+    </div>
     {% endif %}
-    <a href="{{ url_for('index') }}">Powrót do listy projektów</a>
+
+    <!-- Back to Index Link -->
+    <div class="mt-3">
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Powrót do listy projektów</a>
+    </div>
+</div>
 {% endblock %}
