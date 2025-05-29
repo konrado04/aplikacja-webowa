@@ -71,11 +71,11 @@ Dodaj Kategorię lub Cechę
         <input type="hidden" name="action" value="add">
         {% endif %}
 
-        <div class="input-group">
-            <button type="submit" class="btn btn-primary">
-                {% if edit_mode %}Zapisz zmiany{% else %}Dodaj{% endif %}
-            </button>
-            <a href="{{ url_for('index') }}" class="btn btn-secondary">Anuluj</a>
+        <<div class="input-group">
+        <button type="submit" class="btn btn-primary">
+            {% if edit_mode %}Zapisz zmiany{% else %}Dodaj{% endif %}
+        </button>
+        <a href="{{ url_for('index') }}" class="btn btn-cancel">Anuluj</a>
         </div>
     </form>
 
@@ -84,42 +84,46 @@ Dodaj Kategorię lub Cechę
         <h3>Istniejące Kategorie i Cechy</h3>
         {% if categories %}
         {% for category, features in categories.items() %}
-        <div class="category">
-            <h4>{{ category }}</h4>
-            <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;">
-                <input type="hidden" name="category_name" value="{{ category }}">
-                <input type="hidden" name="action" value="edit_category">
-                <button type="submit" class="btn btn-sm btn-primary">Edytuj</button>
-            </form>
-            <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;" onsubmit="return confirm('Czy na pewno chcesz usunąć kategorię {{ category }}?');">
-                <input type="hidden" name="category_name" value="{{ category }}">
-                <input type="hidden" name="action" value="delete_category">
-                <button type="submit" class="btn btn-sm delete-button">Usuń</button>
-            </form>
-            {% if features %}
-            <ul>
-                {% for feature, details in features.items() %}
-                <li>
-                    {{ feature }} (Podpowiedź: {{ details.hint or 'Brak' }})
-                    <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;">
-                        <input type="hidden" name="category_name" value="{{ category }}">
-                        <input type="hidden" name="feature_name" value="{{ feature }}">
-                        <input type="hidden" name="action" value="edit_feature">
-                        <button type="submit" class="btn btn-sm btn-primary">Edytuj</button>
-                    </form>
-                    <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;" onsubmit="return confirm('Czy na pewno chcesz usunąć cechę {{ feature }}?');">
-                        <input type="hidden" name="category_name" value="{{ category }}">
-                        <input type="hidden" name="feature_name" value="{{ feature }}">
-                        <input type="hidden" name="action" value="delete_feature">
-                        <button type="submit" class="btn btn-sm delete-button">Usuń</button>
-                    </form>
-                </li>
-                {% endfor %}
-            </ul>
-            {% else %}
-            <p class="no-results">Brak cech w tej kategorii.</p>
-            {% endif %}
-        </div>
+      <div class="category">
+    <h4>{{ category }}</h4>
+    <div class="button-group">
+        <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;">
+            <input type="hidden" name="category_name" value="{{ category }}">
+            <input type="hidden" name="action" value="edit_category">
+            <button type="submit" class="btn btn-sm btn-primary">Edytuj</button>
+        </form>
+        <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;" onsubmit="return confirm('Czy na pewno chcesz usunąć kategorię {{ category }}?');">
+            <input type="hidden" name="category_name" value="{{ category }}">
+            <input type="hidden" name="action" value="delete_category">
+            <button type="submit" class="btn btn-sm delete-button">Usuń</button>
+        </form>
+    </div>
+    {% if features %}
+    <ul>
+        {% for feature, details in features.items() %}
+        <li>
+            {{ feature }} (Podpowiedź: {{ details.hint or 'Brak' }})
+            <div class="button-group">
+                <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;">
+                    <input type="hidden" name="category_name" value="{{ category }}">
+                    <input type="hidden" name="feature_name" value="{{ feature }}">
+                    <input type="hidden" name="action" value="edit_feature">
+                    <button type="submit" class="btn btn-sm btn-primary">Edytuj</button>
+                </form>
+                <form method="POST" action="{{ url_for('add_category_feature') }}" style="display: inline;" onsubmit="return confirm('Czy na pewno chcesz usunąć cechę {{ feature }}?');">
+                    <input type="hidden" name="category_name" value="{{ category }}">
+                    <input type="hidden" name="feature_name" value="{{ feature }}">
+                    <input type="hidden" name="action" value="delete_feature">
+                    <button type="submit" class="btn btn-sm delete-button">Usuń</button>
+                </form>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="no-results">Brak cech w tej kategorii.</p>
+    {% endif %}
+</div>
         {% endfor %}
         {% else %}
         <p class="no-results">Brak kategorii.</p>

@@ -17,7 +17,7 @@ body {
     border-radius: 10px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #333333;
     margin-bottom: 25px;
     font-weight: bold;
@@ -26,6 +26,7 @@ h1, h2, h3 {
 h1 { font-size: 28px; }
 h2 { font-size: 22px; }
 h3 { font-size: 18px; }
+h4 { font-size: 16px; }
 
 .nav-links {
     margin-bottom: 30px;
@@ -94,6 +95,10 @@ ul {
 li {
     margin: 15px 0;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Zwiększony odstęp dla lepszego wyrównania przycisków w prawo */
 }
 
 form {
@@ -170,7 +175,7 @@ select {
 button {
     background-color: #00A0E4;
     color: #FFFFFF;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
     border-radius: 6px;
     font-size: 14px;
@@ -185,8 +190,8 @@ button:hover {
 
 .delete-button {
     background-color: #D32F2F; /* Czerwony dla usuwania */
-    padding: 8px 16px;
-    font-size: 13px;
+    padding: 10px 20px;
+    font-size: 14px;
 }
 
 .delete-button:hover {
@@ -194,26 +199,66 @@ button:hover {
     transform: translateY(-2px);
 }
 
-.error {
-    color: #D32F2F; /* Czerwony dla błędów */
-    font-size: 14px; /* Zmniejszono dla lepszej proporcji */
-    margin-bottom: 20px;
-    font-weight: 500;
-    padding: 12px;
-    background-color: #FFEBEE;
+.btn-sm {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Specyficzne style dla add_category_feature.html */
+.csv-form .input-group .btn-cancel {
+    background-color: #D32F2F; /* Czerwony dla anulowania, jak delete-button */
+    padding: 10px 20px;
+    font-size: 14px;
     border-radius: 6px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.csv-form .input-group .btn-cancel:hover {
+    background-color: #B71C1C; /* Ciemniejszy czerwony */
+    transform: translateY(-2px);
+}
+
+.alert-container {
+    margin-bottom: 20px;
+}
+
+.alert {
+    position: relative;
+    padding: 12px 40px 12px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.alert-success {
+    color: #2E7D32;
+    background-color: #E8F5E9;
+    border: 1px solid #C8E6C9;
+}
+
+.alert-danger {
+    color: #D32F2F;
+    background-color: #FFEBEE;
     border: 1px solid #FFCDD2;
 }
 
-.success {
-    color: #2E7D32; /* Zielony dla sukcesu */
-    font-size: 14px; /* Zmniejszono dla lepszej proporcji */
-    margin-bottom: 20px;
-    font-weight: 500;
-    padding: 12px;
-    background-color: #E8F5E9;
-    border-radius: 6px;
-    border: 1px solid #C8E6C9;
+.btn-close {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: #333333;
+    opacity: 0.6;
+}
+
+.btn-close:hover {
+    opacity: 1;
 }
 
 .no-results {
@@ -229,6 +274,14 @@ button:hover {
     border-left: 4px solid #00A0E4;
     background-color: #F9F9F9;
     border-radius: 6px;
+}
+
+.category .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-left: auto; /* Maksymalne przesunięcie w prawo */
+    min-width: 200px; /* Minimalna szerokość dla przycisków, aby zachować spójność */
 }
 
 .form-group {
@@ -267,8 +320,8 @@ button:hover {
 
 .input-group {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    justify-content: flex-end;
+    gap: 10px;
     flex-wrap: wrap;
     margin-top: 10px;
 }
@@ -281,7 +334,7 @@ button:hover {
 
 .input-group button {
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .new-value-field {
@@ -329,45 +382,43 @@ button:hover {
         flex-direction: column;
         gap: 10px;
     }
+    .input-group,
+    .category .button-group {
+        justify-content: flex-end;
+    }
     .input-group select,
     .input-group button,
+    .input-group .btn-cancel,
     .new-value-field input,
     .file-upload label {
         width: 100%;
         max-width: 100%;
     }
-    .project-form {
-      margin: 20px 0;
+    .category {
+        padding: 10px;
     }
-    .form-group {
-      margin-bottom: 15px;
+    .category h4 {
+        font-size: 14px;
     }
-    .form-group label {
-      display: block;
-      font-weight: bold;
+    li {
+        flex-direction: column;
+        align-items: flex-end;
     }
-    .form-group input, .form-group select {
-      width: 100%;
-      max-width: 300px;
-      padding: 8px;
-      margin-top: 5px;
+    .category .button-group {
+        min-width: 100%; /* Pełna szerokość na małych ekranach */
     }
-    .form-group small {
-      display: block;
-      color: #666;
+    .btn-sm,
+    .delete-button,
+    .csv-form .input-group .btn-cancel {
+        padding: 8px 16px;
+        font-size: 12px;
     }
-    .new-feature {
-      display: flex;
-      gap: 10px;
+    .alert {
+        font-size: 13px;
+        padding: 10px 30px 10px 15px;
     }
-    .flash-messages .error {
-      color: #e74c3c;
+    .btn-close {
+        font-size: 10px;
+        right: 10px;
     }
-    .flash-messages .success {
-      color: #2ecc71;
-    }
-    .back-link {
-      display: inline-block;
-      margin-top: 20px;
-    }
-    }
+}
